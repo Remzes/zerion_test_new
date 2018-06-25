@@ -1,3 +1,5 @@
+import _ from 'lodash'
+
 const objectToArray = (obj) => {
   const arr = []
   const keys = Object.keys(obj)
@@ -8,4 +10,8 @@ const objectToArray = (obj) => {
   }, arr)
 
   return arr
+}
+
+const objectToArrayWithLodash = (obj) => {
+  return _.toArray(obj)
 }
